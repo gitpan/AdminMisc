@@ -1,0 +1,62 @@
+
+        +==========================================================+
+        |                                                          |
+        |                                                          |
+        |            AdminMisc extension for Win32 Perl            |
+        |                                                          |
+        |                                                          |
+        |              -----------------------------               |
+        |                                                          |
+        |              by Dave Roth <rothd@roth.net>               |
+        |                                                          |
+        |                                                          |
+        |  Copyright (c) 1996-1997 Dave Roth. All rights reserved. |
+        |                Courtesy of Roth Consulting               |
+        |                http://www.roth.net/consult               |
+        +==========================================================+
+
+
+History:
+--------
+971103
+	- Added timeout value for EnvSetVar() and EnvDelVar(). This prevents
+	  the function from waiting forever if an application is hanging 
+	  during the broadcast that the environment has changed.
+
+971102
+    - Fix applied to GetDriveSpace() to return values greater than
+      4,294,967,295 (0xffffffff). The original GetDriveSpace() returned
+      32 bit unsigned values. Thanks to Scott Bleasdell <bleasdes@kochind.com>
+      for pointing this out.
+
+971022
+    - Added several functions:
+        GetDrives()
+        GetDriveType()
+        GetDriveSpace()
+        GetDriveGeometry()
+        GetProcessorInfo()
+        GetMemoryInfo()
+        GetWinVersion()
+        WriteINI()
+        ReadINI()
+        ExitWindows()
+        GetIdInfo()
+        GetDC()
+        GetPDC()
+        GetStdHandle()
+        SetPassword()
+        GetTOD()
+        RenameUser()
+        ScheduleAdd()
+        ScheduleDel()
+        ScheduleList()
+        ScheduleGet()
+        GetFileInfo()
+        GetEnvVar()
+        SetEnvVar()
+        DelEnvVar()
+    - Modified the following function:
+        CreateProcessAsUser()
+
+
